@@ -10,10 +10,17 @@
 				Device
 			</a>
 			<nav class="main-navigation">
-				<!-- Здесь будет форма поиска -->
+				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+					<p class="search">
+						<label class="visually-hidden" for="search">Поиск по сайту</label>
+						<input id="search" type="search" placeholder="Поиск по сайту">
+					</p>
+				</form>
 				<ul class="user-header-navigaton">
 					<li class="user-name"><a href="#">Валентин Петухов</a></li>
-					<li class="sign-out"><a href="#">Выйти</a></li>
+					<li class="sign-out">
+						<a class="sign-out" href="sign-out.html">Выйти</a>
+					</li>
 				</ul>
 				<ul class="site-header-navigation">
 					<li><a href="#">Каталог товаров</a>
@@ -45,11 +52,64 @@
 			</ul>
 			<section class="filtres">
 				<h2>Фильтр:</h2>
-				<!-- Здесь будет форма -->
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+						<legend>Стоимость</legend>
+						От 0<input id="cost" type="range" min="0" max="9000" step="1" value="5000">До 5000
+					</fieldset>
+					<fieldset>
+						<legend>Цвет</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" 
+											 type="checkbox" name="black" id="black" checked>
+								<label for="black">Черный</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" 
+											 type="checkbox" id="white" name="white">
+								<label for="white">Белый</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" 
+											 type="checkbox" id="blue" name="blue" checked>
+								<label for="blue">Синий</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" 
+											 type="checkbox" id="red" name="red" checked>
+								<label for="red">Красный</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox" 
+											 type="checkbox" id="pink" name="pink">
+								<label for="pink">Розовый</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Bluetooth</legend>
+						<ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" 
+											 type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
+								<label for="bluetooth-yes">Есть</label>
+              </li>
+							<li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" 
+											 type="radio" name="bluetooth" id="bluetooth-no" value="no">
+                <label for="bluetooth-no">Нет</label>
+              </li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="filter-button button">Показать</button>
+				</form>
 			</section>
 			<section class="sorting">
 				<h2>Сортировка:</h2>
-				<!-- Здесь будет форма -->
+				<a  class="sort" href="#">По цене</a>
+				<a  class="sort" href="#">По типу</a>
+				<a  class="sort" href="#">По популярности</a>
 			</section>
 			<section class="selfy-catalog">
 				<h2 class="visually-hidden">Список селфи-палок</h2>
@@ -109,13 +169,17 @@
 					<li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
 				</ul>
-				<span class="catalog-button catalog-button-back">Назад</span>
-				<span class="catalog-button catalog-button-next">Вперед</span>
+				<button class="button gallery-button gallery-button-back" type="button">
+					Назад
+				</button>
+        <button class="button gallery-button gallery-button-next" type="button">
+					Вперед
+				</button>
 			</section>
 		</main>
 		<footer class="main-footer">
-			<a class="main-footer-logo">
-				<img src="" width="164" height="36" alt="Логотип магазина Device">
+			<a class="main-header-logo" href="index.html">
+				Device
 			</a>
 			<p class="contacts">г. Москва ул. Строителей 15</p>
 			<nav class="footer-navigation">
@@ -126,7 +190,9 @@
 				</ul>
 				<ul class="user-footer-navigaton">
 					<li class="user-name"><a href="#">Валентин Петухов</a></li>
-					<li class="sign-out"><a href="#">Выйти</a></li>
+					<li class="sign-out">
+						<a class="sign-out" href="sign-out.html">Выйти</a>
+					</li>
 				</ul>
 				<ul class="service-footer-navigation">
 					<li><a href="#">Сравнить</a></li>
