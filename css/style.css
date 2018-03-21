@@ -623,6 +623,10 @@ textarea:focus:required:invalid {
 
 .inner-catalog-wrapper {
 	display: flex;
+}
+
+.add-container {
+	display: flex;
 	flex-direction: column;
 }
 
@@ -643,6 +647,9 @@ textarea:focus:required:invalid {
 	text-transform: uppercase;
 	letter-spacing: 3.2px;
 	color: #000000;
+}
+.sorting h2 {
+	padding-left: 20px;
 }
 .filtres, .sorting {
 	background-color: #efefef;
