@@ -32,12 +32,18 @@
 						<ul class="site-header-navigation">
 							<li  class="add-menu"><a href="#">Каталог товаров</a>
 								<ul class="catalog-navigation">
-									<li><a href="#">Виртуальная реальность</a></li>
-									<li><a href="#">Моноподы для селфи</a></li>
-									<li><a href="#">Экшн-камеры</a></li>
-									<li><a href="#">Фитнес-браслеты</a></li>
-									<li><a href="#">Умные часы</a></li>
-									<li><a href="#">Квадрокоптеры</a></li>
+									<div>
+										<li><a href="#">Виртуальная реальность</a></li>
+										<li><a href="#">Моноподы для селфи</a></li>
+										<li><a href="#">Экшн-камеры</a></li>
+									</div>
+									<div>
+										<li><a href="#">Фитнес-браслеты</a></li>
+										<li><a href="#">Умные часы</a></li>
+									</div>
+									<div>
+										<li><a href="#">Квадрокоптеры</a></li>
+									</div>
 								</ul>
 							</li>
 							<li><a href="#">Доставка</a></li>
@@ -63,36 +69,50 @@
 					<div class="filtres-wrapper">
 						<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 							<fieldset>
-								<legend>Стоимость</legend>
-								От 0<input id="cost" type="range" min="0" max="9000" step="1" value="5000">До 5000
+								<legend class="filter-cost">Стоимость</legend>
+								<input class="visually-hidden" id="cost" type="range" min="0" max="9000" step="1" value="5000">
+								<div class="range-controls">
+        					<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="range-toggle range-toggle-min"></div>
+									<div class="range-toggle range-toggle-max"></div>
+									<span>от 0</span>
+									<span>до 5000</span>
+								</div>
 							</fieldset>
 							<fieldset>
 								<legend>Цвет</legend>
 								<ul>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" 
+										<input class="visually-hidden" 
 													 type="checkbox" name="black" id="black" checked>
-										<label for="black">Черный</label>
+										<span class="checkbox-indicator"></span>
+										<label class="filter-input-checkbox" for="black">Черный</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" 
+										<input class="visually-hidden" 
 													 type="checkbox" id="white" name="white">
-										<label for="white">Белый</label>
+										<span class="checkbox-indicator"></span>
+										<label class="filter-input-checkbox" for="white">Белый</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" 
+										<input class="visually-hidden" 
 													 type="checkbox" id="blue" name="blue" checked>
-										<label for="blue">Синий</label>
+										<span class="checkbox-indicator"></span>
+										<label class="filter-input-checkbox" for="blue">Синий</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" 
+										<input class="visually-hidden" 
 													 type="checkbox" id="red" name="red" checked>
-										<label for="red">Красный</label>
+										<span class="checkbox-indicator"></span>
+										<label class="filter-input-checkbox" for="red">Красный</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-checkbox" 
+										<input class="visually-hidden" 
 													 type="checkbox" id="pink" name="pink">
-										<label for="pink">Розовый</label>
+										<span class="checkbox-indicator"></span>
+										<label class="filter-input-checkbox" for="pink">Розовый</label>
 									</li>
 								</ul>
 							</fieldset>
@@ -100,14 +120,16 @@
 								<legend>Bluetooth</legend>
 								<ul>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-radio" 
+										<input class="visually-hidden" 
 													 type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
-										<label for="bluetooth-yes">Есть</label>
+										<span class="radio-indicator"></span>
+										<label class="filter-input-radio" for="bluetooth-yes">Есть</label>
 									</li>
 									<li class="filter-option">
-										<input class="visually-hidden filter-input filter-input-radio" 
+										<input class="visually-hidden" 
 													 type="radio" name="bluetooth" id="bluetooth-no" value="no">
-										<label for="bluetooth-no">Нет</label>
+										<span class="radio-indicator"></span>
+										<label class="filter-input-radio" for="bluetooth-no">Нет</label>
 									</li>
 								</ul>
 							</fieldset>
@@ -123,6 +145,8 @@
 								<li><a  class="sort" href="#">По типу</a></li>
 								<li><a  class="sort" href="#">По популярности</a></li>
 							</ul>
+							<div class="sorting-plus"></div>
+							<div class="sorting-minus"></div>
 						</section>
 						<section class="selfy-catalog">
 							<h2 class="visually-hidden">Список селфи-палок</h2>
@@ -156,8 +180,8 @@
 											<div class="catalog-hover">
 												<a href="#" class="button hover">В корзину</a><br>
 												<a href="#" class="compare hover">Добавить к сравнению</a>
-											</div>
-										</div>
+										  </div>
+									</div>
 								</li>
 								<li class="selfy-catalog-item">
 									<div class="description">
@@ -172,8 +196,8 @@
 										<div class="catalog-hover">
 												<a href="#" class="button hover">В корзину</a><br>
 												<a href="#" class="compare hover">Добавить к сравнению</a>
-											</div>
 										</div>
+									</div>
 								</li>
 								<li class="selfy-catalog-item">
 									<div class="description">
@@ -188,8 +212,8 @@
 										<div class="catalog-hover">
 												<a href="#" class="button hover">В корзину</a><br>
 												<a href="#" class="compare hover">Добавить к сравнению</a>
-											</div>
 										</div>
+									</div>
 								</li>
 							</ul>
 						</section>
