@@ -1298,6 +1298,9 @@ li:nth-of-type(6) .catalog-container img {
 	opacity: 0.1;
 }
 
+.copyright img {
+	opacity: 1;
+}
 .copyright img:hover {
 	opacity: 0.6;
 }
