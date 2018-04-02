@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Девайс</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/normalize.min.css" rel="stylesheet">
 		<link href="css/style.min.css" rel="stylesheet" >
 	</head>
 	<body class="index">
@@ -205,24 +205,24 @@
 					<h2 class="visually-hidden">Услуги</h2>
 					<ul class="services-buttons">
 						<li>
-							<button class="button">Доставка</button>
+							<button class="button services-active">Доставка</button>
 						</li>
 						<li>
-							<button class="button services-active">Гарантия</button>
+							<button class="button">Гарантия</button>
 						</li>
 						<li>
 							<button class="button">Кредит</button>
 						</li>
 					</ul>
 					<ul class="services-description">
-						<li>
+						<li class="services-active">
 							<h3>Доставка</h3>
 							<p>Мы с удовольствием доставим ваш товар
 								прямо к вашему подъезду совершенно бесплатно!
 								Ведь мы неплохо заработаем, поднимая его на 
 								ваш этаж.</p>
 						</li>
-						<li class="services-active">
+						<li>
 							<h3>Гарантия</h3>
 							<p>Если из-за возгорания купленного у нас 
 								товара у вас сгорит дом - не переживайте,
@@ -357,7 +357,7 @@
 					<input id="email" type="email" name="email" value="" placeholder="email@example.com" required>
 				</p>
 				<p class="communication-item">
-					<label for="letter">Текст письма</label><br>
+					<label for="letter">Текст письма:</label><br>
 					<textarea id="letter" placeholder="В свободной форме" required></textarea>
 				</p>
 				<button class="button" type="submit">Отправить</button>
